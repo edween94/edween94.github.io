@@ -33,7 +33,7 @@
 <body> <!--This is the body/main part of the document. It contains the content that appears on screen -->
     <nav class = "navbar">
         <div class="logo">
-            <img src="logo.png" alt="EB Logo" class="cyber-logo">
+            <img src="assets/auxiliary/logo.png" alt="EB Logo" class="cyber-logo">
         </div>
             <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">☰</button>
             <ul class="nav-links" id="primary-navigation">
@@ -42,9 +42,7 @@
             <li class="dropdown">
                 <a href="#projects" class="dropbtn">Projects ▾</a>
                 <div class="dropdown-content">
-                    <a href="#drone-design-project">Drone Design Project</a>
-                    <a href="#the-last-lift">The Last Lift (C++ Game)</a>
-                    <a href="#overcurrent-sim">Overcurrent Protection Circuit Sim</a>
+                    <a href="#drone-esc-design">Drone Electronics Speed Controller Design</a>
                 </div>
             </li>
             <li><a href="resume.pdf" target = "_blank" class= "highlight-btn">Resume</a></li>
@@ -65,8 +63,8 @@
             <div class="hero-buttons">
                 <a href="#projects" class="primary-btn">View Projects</a>
     
-                <a href="mailto:ebaiden64@gmail.com" class="icon-btn"><img src="mail_btn.png" alt="Email"></a>
-                <a href="https://www.linkedin.com/in/ebaiden" target="_blank" class="icon-btn"> <img src="LinkedIn_btn.png" alt="LinkedIn"></a>
+                <a href="mailto:ebaiden64@gmail.com" class="icon-btn"><img src="assets/auxiliary/mail_btn.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/ebaiden" target="_blank" class="icon-btn"> <img src="assets/auxiliary/LinkedIn_btn.png" alt="LinkedIn"></a>
             </div>
         </div>
     </section>
@@ -76,43 +74,17 @@
         
         <div class="projects-grid">
             
-            <div id="drone-design-project" class="project-card">
+            <div id="drone-esc-design" class="project-card">
                 <div class="card-header">
-                    <h3>Drone Power Board</h3>
+                    <h3>Drone Electronics Speed Controller Design</h3>
                     <span class="status-indicator">HARDWARE</span>
                 </div>
-                <p class="tech-stack">KiCad | LTspice | Power Electronics</p>
+                <p class="tech-stack">Power Electronics | Motor Control | PCB Design</p>
                 <p class="card-desc">
-                    Designed a custom 4-layer Power Distribution Board (PDB) rated for 60A continuous current. 
-                    Optimized thermal performance and voltage drop for high-efficiency flight.
+                    Designed a drone electronic speed controller focused on efficient high-current switching,
+                    stable PWM motor control, and robust thermal performance for reliable flight operation.
                 </p>
-                <a href="#" class="card-btn">View Schematics &rarr;</a>
-            </div>
-
-            <div id="the-last-lift" class="project-card">
-                <div class="card-header">
-                    <h3>The Last Lift</h3>
-                    <span class="status-indicator">GAME DEV</span>
-                </div>
-                <p class="tech-stack">C++ | OOP | Game Logic</p>
-                <p class="card-desc">
-                    A turn-based survival RPG set during a zombie outbreak at Stevens Institute of Technology caused by a biochem lab failure. 
-                    Made in <strong>C++</strong> using Object-Oriented Programming principles, featuring custom GUI rendering with state machines, combat handling structs, and file persistence.
-                </p>
-                <a href="#" class="card-btn">View Source &rarr;</a>
-            </div>
-
-            <div id="overcurrent-sim" class="project-card">
-                <div class="card-header">
-                    <h3>Overcurrent Protection Circuit Simulation</h3>
-                    <span class="status-indicator">EMBEDDED</span>
-                </div>
-                <p class="tech-stack">Proteus | STM32 </p>
-                <p class="card-desc">
-                    Engineered a deterministic protection system on an <strong>STM32F103</strong> using timer-driven ADC sampling at <strong>10kHz</strong>. 
-                    Implemented logic for <strong>hysteresis</strong> and fault latching, achieving a &lt;100μs response time.
-                </p>
-                <a href="#" class="card-btn">View Simulation &rarr;</a>
+                <a href="projects/drone-esc.html" class="card-btn">View Project &rarr;</a>
             </div>
 
         </div>

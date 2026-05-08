@@ -339,6 +339,7 @@ body {
     .project-card {
         padding: 18px;
     }
+
 }
 
 /* --- THE CARD DESIGN --- */
@@ -398,6 +399,8 @@ body {
     font-size: 0.95rem;
     margin-bottom: 25px;
 }
+
+
 
 /* The Button inside the card */
 .card-btn {
